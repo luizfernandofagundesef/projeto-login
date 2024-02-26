@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* paleta de cores */
+:root {
+    --cor01: #ffffff;
+    --cor02: #000000;
+    --cor03: #051923;
+    --cor04: #3D0C11;
+}
