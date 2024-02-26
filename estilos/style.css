@@ -34,16 +34,16 @@ section#login {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
     width: 250px;
     height: 490px;
     background-color: var(--cor01);
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.47);
-
+    /* Coloque o tranfrom em último */
+    transform: translate(-50%, -50%);
+    transition: width 0.4s, height 0.4s;
     transition-timing-function: ease;
-    transition: width 0.4s, height 0.4s
 }
 
 section#login>div#imagem {
@@ -71,12 +71,40 @@ div.campo>label {
     display: none;
 }
 
-form>div.campo {
+div.campo>span {
+    color: var(--cor01);
     background-color: var(--cor03);
+    font-size: 2em;
+    width: 40px;
+    height: 39px;
+    padding: 5px;
+}
+
+div.campo>input {
+    background-color: var(--cor04);
+    border: 2px solid var(--cor04);
+    font-size: 1em;
+    /* calc é uma função para calcular */
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+
+    /* Sempre que for fazer transform animação, faça-o na última linha */
+    transform: translateY(-12px);
+}
+
+div.campo>input:focus-within {
+    background-color: var(--cor01);
+}
+
+form>div.campo {
+    background-color: var(--cor04);
     width: 100%;
     display: block;
-    height: 40px;
-    border-radius: 5px;
+    height: 39px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 

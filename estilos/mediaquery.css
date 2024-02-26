@@ -14,7 +14,7 @@ grandes telas: acima de 1200px
     --cor01: #ffffff;
     --cor02: #000000;
     --cor03: #051923;
-    --cor04: #3D0C11;
+    --cor04: #333333;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -25,6 +25,7 @@ grandes telas: acima de 1200px
 
     section#login {
         width: 80vw;
+        height: 280px;
     }
 
     section#login>div#imagem {
@@ -55,6 +56,7 @@ grandes telas: acima de 1200px
 
     section#login {
         width: 950px;
+        height: 300px;
     }
 
     section#login>div#imagem {
@@ -75,5 +77,6 @@ grandes telas: acima de 1200px
 
     div#formulario>p {
         font-size: 1.2em;
+        margin: 20px 0px;
     }
 }
